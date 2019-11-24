@@ -40,7 +40,7 @@ const App = () => {
 
   const handleSign = e => {
     e.preventDefault();
-    if (display !== '0' && !reset) {
+    if ((display !== '0' && !reset) || equals === true) {
       let numDisplay = Number(display);
       numDisplay = numDisplay * -1;
       numDisplay = numDisplay.toString();
